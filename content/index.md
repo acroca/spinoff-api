@@ -1,15 +1,10 @@
 ---
-title: GitHub API
+title: SpinOff API
 ---
 
-# The GitHub API
+# SpinOff API
 
-This describes the resources that make up the official GitHub API v3. If
-you have any problems or requests please contact
-[support](mailto:support@github.com?subject=APIv3).
+This describes the resources of SpinOff API.
 
-For the new API v3, start browsing the resources on the right >>
-
-View the [API Changelog](/v3/changelog) for information on existing and
-planned changes to the API.
+Check the links on the right side to open specific API pages.
 
