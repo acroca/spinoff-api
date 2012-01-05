@@ -9,7 +9,7 @@ desc "Publish to http://developer.github.com"
 task :publish => [:clean] do
   FileUtils.rm_r('output') if File.exist?('output')
 
-  sh "nanoc compile"
+  sh "BASE_ROOT=\"/spinoff-api/\" nanoc compile"
 
   # this should not be necessary, but I can't figure out how to
   # just keep a goddamn static file in the root with nanoc
