@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
-  <title>Status | SpinOff API</title>
+  <title>Company | SpinOff API</title>
   <link href="/spinoff-api/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/spinoff-api/css/960.css" rel="stylesheet" type="text/css" />
   <link href="/spinoff-api/css/uv_active4d.css" rel="stylesheet" type="text/css" />
@@ -28,18 +28,45 @@
 
     <div id="wrapper">
       <div class="content">
-		<h1 id="status-api">Status API</h1>
+		<h1 id="company-api">Company API</h1>
 
-<h2 id="get-status">Get status</h2>
+<h2 id="get-company">Get company</h2>
 
-<p>Gets the status of the user.</p>
+<p>Gets the information of the user’s company.</p>
 
-<pre><code>GET /status
+<pre><code>GET /company
 </code></pre>
 
 <h3 id="response">Response</h3>
 
-<pre class="headers no-response"><code>Status: 200 - OK</code></pre>
+<pre class="headers"><code>Status: 200 - OK</code></pre>
+
+<pre class="highlight"><code class="language-javascript"><span class="p">{</span>
+  <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Company name"</span>
+<span class="p">}</span>
+</code></pre>
+
+<h2 id="create-company">Create company</h2>
+
+<p>Creates the company for the user</p>
+
+<pre><code>POST /company
+</code></pre>
+
+<h3 id="input">Input</h3>
+
+<dl>
+<dt>name</dt>
+  <dd>
+<em>Required</em> <strong>string</strong>
+</dd>
+</dl><h3 id="response-with-valid-parameters">Response with valid parameters</h3>
+
+<pre class="headers no-response"><code>Status: 201 - Created</code></pre>
+
+<h3 id="response-with-invalid-parameters">Response with invalid parameters</h3>
+
+<pre class="headers no-response"><code>Status: 412 - Precondition Failed</code></pre>
       </div>
 
     <div id="js-sidebar" class="sidebar-shell">

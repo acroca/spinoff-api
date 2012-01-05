@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
-  <title>Status | SpinOff API</title>
+  <title>Global responses | SpinOff API</title>
   <link href="/spinoff-api/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/spinoff-api/css/960.css" rel="stylesheet" type="text/css" />
   <link href="/spinoff-api/css/uv_active4d.css" rel="stylesheet" type="text/css" />
@@ -28,18 +28,32 @@
 
     <div id="wrapper">
       <div class="content">
-		<h1 id="status-api">Status API</h1>
+		<h1 id="global-responses">Global responses</h1>
 
-<h2 id="get-status">Get status</h2>
+<h2 id="when-the-request-sends-an-non-basic-authentication">When the request sends an non-basic authentication</h2>
 
-<p>Gets the status of the user.</p>
-
-<pre><code>GET /status
-</code></pre>
+<p>If the request contains any other kind of authentication but simple</p>
 
 <h3 id="response">Response</h3>
 
-<pre class="headers no-response"><code>Status: 200 - OK</code></pre>
+<pre class="headers no-response"><code>Status: 400 - Bad Request</code></pre>
+
+<h2 id="when-the-user-is-not-valid">When the user is not valid</h2>
+
+<p>It happens when the user doesn’t specify HTTP basic authentication with the e-mail and password. Also when the password is incorrect</p>
+
+<h3 id="response-1">Response</h3>
+
+<pre class="headers no-response"><code>Status: 401 - Unauthorized</code></pre>
+
+<h2 id="when-the-user-has-to-create-a-company">When the user has to create a company</h2>
+
+<p>It happens when the user still have to create the company.
+Visit the <a href="/company/">Company API</a> in order to know how to proceed.</p>
+
+<h3 id="response-2">Response</h3>
+
+<pre class="headers no-response"><code>Status: 406 - Not Acceptable</code></pre>
       </div>
 
     <div id="js-sidebar" class="sidebar-shell">
