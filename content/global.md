@@ -24,7 +24,7 @@ It happens when the user doesn't specify HTTP basic authentication with the e-ma
 ## When the user has to create a company
 
 It happens when the user still have to create the company.
-Visit the [Company API](/company/) in order to know how to proceed.
+Visit the [Company API](<%= BASE_ROOT %>company/) in order to know how to proceed.
 
 ### Response
 
