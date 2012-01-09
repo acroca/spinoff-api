@@ -18,14 +18,14 @@ Gets the information of the user's company.
 
 ## Create company
 
-Creates the company for the user
+Creates the company for the user.
     
     POST /company
 
 ### Input
 
 name
-: _Required_ **string**
+: _Required_ **string** - The desired name for the company
 
 ### Response with valid parameters
 

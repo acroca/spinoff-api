@@ -85,7 +85,8 @@ module GitHub
       end
     end
     COMPANY = {
-      name: "Company name"
+      name: "Company name",
+      money: 123
     }
   end
 end
