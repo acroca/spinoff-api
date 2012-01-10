@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
-  <title>SpinOff API</title>
+  <title>Programs | SpinOff API</title>
   <link href="/spinoff-api/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/spinoff-api/css/960.css" rel="stylesheet" type="text/css" />
   <link href="/spinoff-api/css/uv_active4d.css" rel="stylesheet" type="text/css" />
@@ -28,13 +28,30 @@
 
     <div id="wrapper">
       <div class="content">
-		<h1 id="spinoff-api">SpinOff API</h1>
+		<h1 id="programs-api">Programs API</h1>
 
-<p>This describes the resources of SpinOff API.</p>
+<h2 id="get-programs">Get programs</h2>
 
-<p>Check the links on the right side to open specific API pages.</p>
+<p>Gets all the available programs to buy</p>
 
-<p>The server is running on the following url: <a href="http://spinoff-server.heroku.com/">http://spinoff-server.heroku.com/</a></p>
+<pre><code>GET /programs
+</code></pre>
+
+<h3 id="response">Response</h3>
+
+<pre class="headers"><code>Status: 200 - OK</code></pre>
+
+<pre class="highlight"><code class="language-javascript"><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre>
       </div>
 
     <div id="js-sidebar" class="sidebar-shell">
