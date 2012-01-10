@@ -88,6 +88,12 @@ module GitHub
       name: "Company name",
       money: 123
     }
+    PROGRAM = {
+      id: "unique_id",
+      name: "Program name"
+    }
+    PROGRAMS = [PROGRAM, PROGRAM]
+
   end
 end
 
