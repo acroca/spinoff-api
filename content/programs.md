@@ -14,3 +14,20 @@ Gets all the available programs to buy
 
 <%= headers 200 %>
 <%= json :programs %>
+
+
+## Buy programs
+
+The user buys the specified program if this is still available.
+
+	PUT /programs/:id/buy
+
+### Response when the purchase is successful
+
+<%= headers 201, false %>
+
+
+### Response when the program is not available
+
+<%= headers 410, false %>
+
