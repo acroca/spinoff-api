@@ -52,6 +52,21 @@
   <span class="p">}</span>
 <span class="p">]</span>
 </code></pre>
+
+<h2 id="buy-programs">Buy programs</h2>
+
+<p>The user buys the specified program if this is still available.</p>
+
+<pre><code>PUT /programs/:id/buy
+</code></pre>
+
+<h3 id="response-when-the-purchase-is-successful">Response when the purchase is successful</h3>
+
+<pre class="headers no-response"><code>Status: 201 - Created</code></pre>
+
+<h3 id="response-when-the-program-is-not-available">Response when the program is not available</h3>
+
+<pre class="headers no-response"><code>Status: 410 - Gone</code></pre>
       </div>
 
     <div id="js-sidebar" class="sidebar-shell">
