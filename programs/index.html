@@ -30,7 +30,7 @@
       <div class="content">
 		<h1 id="programs-api">Programs API</h1>
 
-<h2 id="get-programs">Get programs</h2>
+<h2 id="get-available-programs">Get available programs</h2>
 
 <p>Gets all the available programs to buy</p>
 
@@ -44,16 +44,18 @@
 <pre class="highlight"><code class="language-javascript"><span class="p">[</span>
   <span class="p">{</span>
     <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
-    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span><span class="p">,</span>
+    <span class="s2">"price"</span><span class="o">:</span> <span class="mi">1000</span>
   <span class="p">},</span>
   <span class="p">{</span>
     <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
-    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span><span class="p">,</span>
+    <span class="s2">"price"</span><span class="o">:</span> <span class="mi">1000</span>
   <span class="p">}</span>
 <span class="p">]</span>
 </code></pre>
 
-<h2 id="get-programs-1">Get programs</h2>
+<h2 id="get-company-programs">Get company programs</h2>
 
 <p>Gets all the programs of the user’s company. They will appear here after buying</p>
 
@@ -67,11 +69,13 @@
 <pre class="highlight"><code class="language-javascript"><span class="p">[</span>
   <span class="p">{</span>
     <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
-    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span><span class="p">,</span>
+    <span class="s2">"price"</span><span class="o">:</span> <span class="mi">1000</span>
   <span class="p">},</span>
   <span class="p">{</span>
     <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
-    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span><span class="p">,</span>
+    <span class="s2">"price"</span><span class="o">:</span> <span class="mi">1000</span>
   <span class="p">}</span>
 <span class="p">]</span>
 </code></pre>
@@ -87,7 +91,7 @@
 
 <pre class="headers no-response"><code>Status: 201 - Created</code></pre>
 
-<h3 id="response-when-the-program-is-not-available">Response when the program is not available</h3>
+<h3 id="response-when-the-purchase-is-not-successful">Response when the purchase is not successful</h3>
 
 <pre class="headers no-response"><code>Status: 410 - Gone</code></pre>
       </div>
