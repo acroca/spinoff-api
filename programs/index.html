@@ -53,6 +53,29 @@
 <span class="p">]</span>
 </code></pre>
 
+<h2 id="get-programs-1">Get programs</h2>
+
+<p>Gets all the programs of the user’s company. They will appear here after buying</p>
+
+<pre><code>GET /company/programs
+</code></pre>
+
+<h3 id="response-1">Response</h3>
+
+<pre class="headers"><code>Status: 200 - OK</code></pre>
+
+<pre class="highlight"><code class="language-javascript"><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="s2">"id"</span><span class="o">:</span> <span class="s2">"unique_id"</span><span class="p">,</span>
+    <span class="s2">"name"</span><span class="o">:</span> <span class="s2">"Program name"</span>
+  <span class="p">}</span>
+<span class="p">]</span>
+</code></pre>
+
 <h2 id="buy-programs">Buy programs</h2>
 
 <p>The user buys the specified program if this is still available.</p>
