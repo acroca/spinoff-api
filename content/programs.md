@@ -4,7 +4,7 @@ title: Programs | SpinOff API
 
 # Programs API
 
-## Get programs
+## Get available programs
 
 Gets all the available programs to buy
     
@@ -16,7 +16,7 @@ Gets all the available programs to buy
 <%= json :programs %>
 
 
-## Get programs
+## Get company programs
 
 Gets all the programs of the user's company. They will appear here after buying
     
@@ -39,7 +39,7 @@ The user buys the specified program if this is still available.
 <%= headers 201, false %>
 
 
-### Response when the program is not available
+### Response when the purchase is not successful
 
 <%= headers 410, false %>
 

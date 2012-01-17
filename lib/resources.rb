@@ -90,7 +90,8 @@ module GitHub
     }
     PROGRAM = {
       id: "unique_id",
-      name: "Program name"
+      name: "Program name",
+      price: 1000
     }
     PROGRAMS = [PROGRAM, PROGRAM]
 
