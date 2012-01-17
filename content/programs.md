@@ -16,6 +16,18 @@ Gets all the available programs to buy
 <%= json :programs %>
 
 
+## Get programs
+
+Gets all the programs of the user's company. They will appear here after buying
+    
+    GET /company/programs
+
+### Response
+
+<%= headers 200 %>
+<%= json :programs %>
+
+
 ## Buy programs
 
 The user buys the specified program if this is still available.
